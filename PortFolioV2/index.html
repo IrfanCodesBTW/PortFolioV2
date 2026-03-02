@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irfan Basha — Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ─── NAVBAR ─── -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <a class="navbar-logo" href="#hero" aria-label="Home">IB</a>
+
+      <!-- Desktop links -->
+      <ul class="navbar-links" role="list">
+        <li><a href="#hero"     class="nav-link" data-section="hero">Home</a></li>
+        <li><a href="#skills"   class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact"  class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Mobile drawer -->
+      <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+        <ul role="list">
+          <li><a href="#hero"     class="nav-link" data-section="hero">Home</a></li>
+          <li><a href="#skills"   class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#contact"  class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section id="hero" class="hero">
+      <div class="hero-grid">
+        <div class="hero-eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Currently Leveling Up</span>
+        </div>
+
+        <h1 class="hero-name">Shaik<br><em>Irfan Basha</em></h1>
+
+        <p class="hero-tagline">Creating. Coding.<br>Building the future.</p>
+
+        <p class="hero-bio">
+          I build products, break limits, and chase the future with code, design, and relentless ambition.
+          <br>Student at NIAT&nbsp;×&nbsp;Aurora — Developer — Creator.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- Decorative lines -->
+      <div class="hero-deco" aria-hidden="true">
+        <div class="deco-line"></div>
+        <div class="deco-line"></div>
+        <div class="deco-line"></div>
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─── -->
+    <section id="skills" class="section skills-section">
+      <div class="section-inner">
+        <h2 class="section-title reveal">Skills &amp; Stack</h2>
+        <!-- JS will inject skill chips here -->
+        <div class="skills-grid" id="skillsGrid" aria-label="Skills list"></div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section id="projects" class="section projects-section">
+      <div class="section-inner">
+        <h2 class="section-title reveal">Projects</h2>
+        <!-- JS will render cards here -->
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─── -->
+    <section id="contact" class="section contact-section">
+      <div class="section-inner contact-inner">
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="contact-sub reveal">I'm always open to interesting conversations, collaborations, or new opportunities.</p>
+
+        <!-- JS will render contact links here -->
+        <div class="contact-links" id="contactLinks"></div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="footer">
+      <p>© <span id="footerYear"></span> Shaik Irfan Basha. Built with intention.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
